@@ -1,0 +1,79 @@
+/* Navbar.css */
+
+/* Navbar with frosted glass effect */
+.custom-navbar {
+  background-color: rgba(30, 30, 30, 0.7); /* Reduced transparency */
+  backdrop-filter: blur(10px); /* Adds frosted glass effect */
+  padding: 10px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.custom-navbar:hover {
+  background-color: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(12px); /* Slightly increases blur on hover */
+}
+
+/* Navbar brand styling */
+.navbar-brand-custom {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand-custom:hover {
+  color: #76c7d2; /* Lighter color on hover */
+}
+
+/* Navigation link styling with better visibility */
+.nav-link-custom {
+  font-size: 1.1rem;
+  margin-right: 15px;
+  color: #e0e0e0; /* Lighter color for readability */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  padding: 5px 10px; /* Adds padding for hover effect */
+  border-radius: 5px;
+}
+
+.nav-link-custom:hover {
+  color: #222; /* Darker color on hover */
+  background-color: #76c7d2; /* Light background on hover */
+  font-weight: bold;
+  transform: scale(1.05); /* Enlarge slightly on hover */
+}
+
+/* Enhanced logout button styling for dark theme */
+.btn-logout {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #d9534f;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 20px;
+}
+
+.btn-logout:hover {
+  background-color: #c9302c;
+  transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 991px) {
+  .navbar-brand-custom {
+    font-size: 1.4rem;
+  }
+
+  .nav-link-custom {
+    font-size: 1rem;
+  }
+
+  .btn-logout {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
